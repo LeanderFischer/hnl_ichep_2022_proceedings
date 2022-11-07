@@ -770,7 +770,7 @@ FUNCTION {article}
   crossref missing$
     {
       journal missing$
-        { format.eprint output }
+        { format.eprint.paren output }
         { journal empty$
             { format.eprint output }
             { format.doi * "{" * journal emphasize before.all 'output.state := "journal" output.check
